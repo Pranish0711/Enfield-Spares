@@ -1,0 +1,159 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+    transition: border-color 0.25s, transform 0.25s;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .card:hover {
+    border-color: rgba(212, 146, 10, 0.4);
+    transform: translateY(-3px);
+  }
+  
+  /* Image */
+  .imageWrap {
+    position: relative;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1a1710, #0d0b08);
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+  }
+  
+  .card:hover .image {
+    transform: scale(1.04);
+  }
+  
+  .imagePlaceholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--border-light);
+  }
+  
+  .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--gold);
+    color: #000;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 1px;
+  }
+  
+  .wishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.6);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: var(--text-muted);
+    width: 32px;
+    height: 32px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s, color 0.2s, border-color 0.2s;
+  }
+  
+  .card:hover .wishlist {
+    opacity: 1;
+  }
+  
+  .wishlist:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+  }
+  
+  /* Body */
+  .body {
+    padding: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sku {
+    font-size: 10px;
+    color: var(--text-dim);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  
+  .name {
+    font-family: var(--font-condensed);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: var(--text);
+    margin-bottom: 8px;
+    line-height: 1.3;
+    flex: 1;
+  }
+  
+  .compatible {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  
+  .priceBlock {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  
+  .price {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--gold-light);
+  }
+  
+  .originalPrice {
+    font-size: 13px;
+    color: var(--text-dim);
+    text-decoration: line-through;
+  }
+  
+  .inStock {
+    font-size: 10px;
+    color: #4CAF50;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+  
+  .outOfStock {
+    font-size: 10px;
+    color: #f44336;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+  

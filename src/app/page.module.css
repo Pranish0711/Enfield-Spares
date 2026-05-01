@@ -1,0 +1,383 @@
+/* ── Hero ── */
+.hero {
+    position: relative;
+    background: linear-gradient(135deg, #000 0%, #0d0b06 50%, #1a1200 100%);
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .heroBgText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-display);
+    font-size: clamp(120px, 20vw, 220px);
+    font-weight: 700;
+    color: rgba(212, 146, 10, 0.04);
+    letter-spacing: 20px;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+  }
+  
+  .heroGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 60px;
+    align-items: center;
+  }
+  
+  .heroLeft {
+    padding-right: 40px;
+  }
+  
+  .heroBadge {
+    display: inline-block;
+    background: rgba(212, 146, 10, 0.15);
+    border: 1px solid rgba(212, 146, 10, 0.4);
+    color: var(--gold-light);
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    margin-bottom: 28px;
+    border-radius: 1px;
+  }
+  
+  .heroTitle {
+    font-family: var(--font-display);
+    font-size: clamp(52px, 6vw, 80px);
+    font-weight: 700;
+    line-height: 0.95;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+  
+  .heroTitle span {
+    color: var(--gold-light);
+    display: block;
+  }
+  
+  .heroSubtitle {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-width: 440px;
+    margin-bottom: 40px;
+    font-weight: 300;
+  }
+  
+  .heroBtns {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  
+  /* Hero right cards */
+  .heroRight {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 40px;
+  }
+  
+  .heroCard {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    padding: 20px 24px;
+    border-radius: 2px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    transition: border-color 0.2s;
+  }
+  
+  .heroCard:hover {
+    border-color: rgba(212, 146, 10, 0.4);
+  }
+  
+  .heroCardIcon {
+    font-size: 22px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  
+  .heroCard h4 {
+    font-family: var(--font-display);
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  
+  .heroCard p {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+  
+  /* ── Sections ── */
+  .section {
+    padding: 80px 0;
+  }
+  
+  .featuredSection {
+    background: var(--dark-2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 80px 0;
+  }
+  
+  /* ── Categories ── */
+  .catGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+  }
+  
+  .catCard {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 28px 16px;
+    text-align: center;
+    border-radius: 2px;
+    transition: border-color 0.25s, background 0.25s;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .catCard:hover {
+    border-color: rgba(212, 146, 10, 0.5);
+    background: var(--card-hover);
+  }
+  
+  .catCard:hover .catBar {
+    transform: scaleX(1);
+  }
+  
+  .catBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.25s;
+  }
+  
+  .catIcon {
+    font-size: 32px;
+    line-height: 1;
+  }
+  
+  .catName {
+    font-family: var(--font-condensed);
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text);
+    font-weight: 600;
+  }
+  
+  .catCount {
+    font-size: 10px;
+    color: var(--text-dim);
+    letter-spacing: 0.5px;
+  }
+  
+  /* ── Bike Browse ── */
+  .bikeSection {
+    padding: 0 0 80px;
+  }
+  
+  .bikeGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+  }
+  
+  .bikeCard {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 40px 32px;
+    cursor: pointer;
+    transition: background 0.25s;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  .bikeCard:hover {
+    background: var(--card-hover);
+  }
+  
+  .bikeCard:hover .bikeArrow {
+    transform: translateX(6px);
+  }
+  
+  .bikeIcon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0.2;
+  }
+  
+  .bikeLabel {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 8px;
+  }
+  
+  .bikeName {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  
+  .bikeCc {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+  
+  .bikeArrow {
+    color: var(--gold);
+    font-size: 24px;
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    transition: transform 0.2s;
+    display: inline-block;
+  }
+  
+  /* ── Products Grid ── */
+  .productsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  
+  /* ── CTA Strip ── */
+  .ctaStrip {
+    background: var(--gold);
+    padding: 48px 60px;
+    text-align: center;
+  }
+  
+  .ctaStrip h2 {
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  
+  .ctaStrip p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.65);
+    margin-bottom: 24px;
+  }
+  
+  .ctaBtn {
+    display: inline-flex;
+    align-items: center;
+    background: #000;
+    color: var(--gold);
+    padding: 14px 32px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: background 0.2s;
+    text-decoration: none;
+  }
+  
+  .ctaBtn:hover {
+    background: #1a1710;
+  }
+  
+  /* ── Responsive ── */
+  @media (max-width: 1200px) {
+    .catGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .productsGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .heroGrid {
+      grid-template-columns: 1fr;
+      padding: 60px 32px;
+      gap: 40px;
+    }
+  
+    .heroLeft {
+      padding-right: 0;
+    }
+  
+    .heroRight {
+      padding-left: 0;
+    }
+  
+    .bikeGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heroGrid {
+      padding: 40px 20px;
+    }
+  
+    .heroBgText {
+      display: none;
+    }
+  
+    .catGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .bikeGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .productsGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .ctaStrip {
+      padding: 40px 20px;
+    }
+  
+    .ctaStrip h2 {
+      font-size: 26px;
+    }
+  }
+  

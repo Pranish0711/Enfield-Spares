@@ -1,0 +1,48 @@
+import { ProductCard } from "./types";
+
+export const MOCK_PRODUCTS: ProductCard[] = [
+  {
+    id: "p1",
+    slug: "hunter-350-oil-filter",
+    name: "Hunter 350 Genuine Oil Filter",
+    description: "OEM-spec high-flow oil filter for optimal engine protection.",
+    imageUrl: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?auto=format&fit=crop&w=1200&q=80",
+    priceInr: 850,
+    stock: 18,
+    category: "Filters",
+    bikes: ["Hunter 350", "Classic 350"],
+  },
+  {
+    id: "p2",
+    slug: "classic-350-front-brake-pad-kit",
+    name: "Classic 350 Front Brake Pad Kit",
+    description: "Sintered pads for consistent stopping in all weather conditions.",
+    imageUrl: "https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?auto=format&fit=crop&w=1200&q=80",
+    priceInr: 2399,
+    stock: 11,
+    category: "Brake System",
+    bikes: ["Classic 350", "Meteor 350"],
+  },
+  {
+    id: "p3",
+    slug: "himalayan-450-chain-sprocket-set",
+    name: "Himalayan 450 Chain & Sprocket Set",
+    description: "Reinforced set tuned for touring performance and durability.",
+    imageUrl: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+    priceInr: 6499,
+    stock: 7,
+    category: "Chains & Sprockets",
+    bikes: ["Himalayan 450"],
+  },
+  {
+    id: "p4",
+    slug: "interceptor-650-spark-plug-kit",
+    name: "Interceptor 650 Iridium Spark Plug Kit",
+    description: "Premium iridium plugs for stronger ignition and smoother throttle.",
+    imageUrl: "https://images.unsplash.com/photo-1580310614729-ccd69652491d?auto=format&fit=crop&w=1200&q=80",
+    priceInr: 3199,
+    stock: 24,
+    category: "Electricals",
+    bikes: ["Interceptor 650", "Continental GT 650"],
+  },
+];

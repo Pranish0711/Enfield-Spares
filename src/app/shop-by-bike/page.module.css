@@ -1,0 +1,257 @@
+.pageHero {
+    background: linear-gradient(135deg, #000 0%, #0d0b06 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 60px 0;
+  }
+  
+  .pageHeroInner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+  
+  .heroBadge {
+    display: inline-block;
+    background: rgba(212,146,10,0.15);
+    border: 1px solid rgba(212,146,10,0.4);
+    color: var(--gold-light);
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    margin-bottom: 16px;
+    border-radius: 1px;
+  }
+  
+  .pageHeroInner h1 {
+    font-family: var(--font-display);
+    font-size: 52px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  
+  .pageHeroInner h1 span { color: var(--gold); }
+  
+  .pageHeroInner p {
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+  
+  .breadcrumb {
+    padding: 14px 60px;
+    font-size: 12px;
+    color: var(--text-dim);
+    border-bottom: 1px solid var(--border);
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .breadcrumb a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .breadcrumb a:hover { color: var(--gold); }
+  
+  .breadcrumb span { color: var(--text-dim); }
+  
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px;
+  }
+  
+  .intro {
+    margin-bottom: 40px;
+    max-width: 600px;
+  }
+  
+  .intro p {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+  
+  /* Bike Grid */
+  .bikeGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    margin-bottom: 60px;
+  }
+  
+  .bikeCard {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 36px 40px;
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.2s, border-color 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bikeCard:hover {
+    background: var(--card-hover);
+    border-color: rgba(212,146,10,0.3);
+  }
+  
+  .bikeCard:hover .bikeArrow {
+    color: var(--gold);
+    gap: 10px;
+  }
+  
+  /* Bike illustration */
+  .bikeIllustration {
+    flex-shrink: 0;
+    width: 120px;
+    color: rgba(212,146,10,0.2);
+    transition: color 0.2s;
+  }
+  
+  .bikeCard:hover .bikeIllustration {
+    color: rgba(212,146,10,0.35);
+  }
+  
+  .bikeSvg {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Bike Content */
+  .bikeContent {
+    flex: 1;
+  }
+  
+  .bikeType {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 8px;
+  }
+  
+  .bikeName {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+  }
+  
+  .bikeMeta {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .bikeCC {
+    font-size: 12px;
+    color: var(--text-muted);
+    background: var(--dark-3);
+    border: 1px solid var(--border);
+    padding: 3px 10px;
+    border-radius: 2px;
+  }
+  
+  .bikeParts {
+    font-size: 12px;
+    color: var(--gold);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  .bikeDesc {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    max-width: 380px;
+  }
+  
+  /* Arrow */
+  .bikeArrow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    align-self: flex-end;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    flex-shrink: 0;
+    transition: color 0.2s, gap 0.2s;
+  }
+  
+  /* Can't Find */
+  .cantFind {
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    background: var(--dark-3);
+    padding: 48px;
+  }
+  
+  .cantFindInner {
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .cantFindInner h3 {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+  }
+  
+  .cantFindInner p {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+    line-height: 1.7;
+  }
+  
+  @media (max-width: 1024px) {
+    .pageHeroInner,
+    .container,
+    .breadcrumb {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .pageHeroInner h1 { font-size: 36px; }
+  
+    .pageHeroInner,
+    .container,
+    .breadcrumb {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .bikeGrid { grid-template-columns: 1fr; }
+  
+    .bikeCard {
+      flex-direction: column;
+      gap: 16px;
+      padding: 24px 20px;
+    }
+  
+    .bikeIllustration { width: 90px; }
+  
+    .bikeArrow { align-self: flex-start; }
+  
+    .cantFind { padding: 32px 20px; }
+  }
+  
